@@ -22,6 +22,8 @@
 		890B49BD244CA2460065047E /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B49BC244CA2460065047E /* OrderView.swift */; };
 		890B49BF244CA4080065047E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B49BE244CA4080065047E /* AppView.swift */; };
 		890B49C3244CB3300065047E /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890B49C2244CB32F0065047E /* CheckOutView.swift */; };
+		89A2DE4F244F959700A88317 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A2DE4E244F959700A88317 /* Favorites.swift */; };
+		89A2DE51244F992100A88317 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A2DE50244F992100A88317 /* FavoritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		890B49BC244CA2460065047E /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		890B49BE244CA4080065047E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		890B49C2244CB32F0065047E /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
+		89A2DE4E244F959700A88317 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		89A2DE50244F992100A88317 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,6 @@
 				890B49A8244C7D540065047E /* Extensions */,
 				890B4994244C7B530065047E /* AppDelegate.swift */,
 				890B4996244C7B530065047E /* SceneDelegate.swift */,
-				890B4998244C7B530065047E /* ContentView.swift */,
 				890B499F244C7B560065047E /* LaunchScreen.storyboard */,
 				890B49A2244C7B560065047E /* Info.plist */,
 				890B499C244C7B560065047E /* Preview Content */,
@@ -109,6 +112,7 @@
 			children = (
 				890B49AF244C7EC80065047E /* Menu.swift */,
 				890B49B1244C7ECE0065047E /* Order.swift */,
+				89A2DE4E244F959700A88317 /* Favorites.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -125,11 +129,13 @@
 		890B49B3244C90EE0065047E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				890B4998244C7B530065047E /* ContentView.swift */,
 				890B49B6244C910F0065047E /* ItemRow.swift */,
 				890B49B8244C98A30065047E /* ItemDetails.swift */,
 				890B49BC244CA2460065047E /* OrderView.swift */,
 				890B49BE244CA4080065047E /* AppView.swift */,
 				890B49C2244CB32F0065047E /* CheckOutView.swift */,
+				89A2DE50244F992100A88317 /* FavoritesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 			files = (
 				890B49B2244C7ECE0065047E /* Order.swift in Sources */,
 				890B49B9244C98A30065047E /* ItemDetails.swift in Sources */,
+				89A2DE51244F992100A88317 /* FavoritesView.swift in Sources */,
 				890B4995244C7B530065047E /* AppDelegate.swift in Sources */,
 				890B4997244C7B530065047E /* SceneDelegate.swift in Sources */,
 				890B49B7244C910F0065047E /* ItemRow.swift in Sources */,
@@ -215,6 +222,7 @@
 				890B49BD244CA2460065047E /* OrderView.swift in Sources */,
 				890B49AA244C7D680065047E /* Bundle+Decode.swift in Sources */,
 				890B49BF244CA4080065047E /* AppView.swift in Sources */,
+				89A2DE4F244F959700A88317 /* Favorites.swift in Sources */,
 				890B49C3244CB3300065047E /* CheckOutView.swift in Sources */,
 				890B49B0244C7EC80065047E /* Menu.swift in Sources */,
 			);

@@ -12,6 +12,8 @@ struct ItemDetails: View {
     
     @EnvironmentObject var order: Order
     
+    @EnvironmentObject var favorites: Favorites
+    
     var item: MenuItem
     
     var body: some View {
@@ -32,9 +34,28 @@ struct ItemDetails: View {
                 .padding(.bottom, 10)
             Button("Order this") {
                 self.order.add(item: self.item)
-            }.font(.headline)
+            }
+            .font(Font.system(size: 18))
+            .padding(15)
+            .background(Color.blue)
+            .cornerRadius(10)
+            .foregroundColor(.white)
             Spacer()
-        }.navigationBarTitle(Text(item.name), displayMode: .inline)
+        }
+        .navigationBarTitle(Text(item.name), displayMode: .inline)
+        .navigationBarItems(trailing: Button(action: {
+            if self.favorites.isFavorite(item: self.item) {
+                self.favorites.remove(item: self.item)
+            } else {
+                self.favorites.add(item: self.item)
+            }
+        }){
+            if favorites.isFavorite(item: item) {
+                Image(systemName: "star.fill")
+            } else {
+                Image(systemName: "star")
+            }
+        })
     }
 }
 
@@ -42,9 +63,13 @@ struct ItemDetails_Previews: PreviewProvider {
     
     static let order = Order()
     
+    static let favourites = Favorites()
+    
     static var previews: some View {
         NavigationView {
-            ItemDetails(item: MenuItem.example).environmentObject(order)
+            ItemDetails(item: MenuItem.example)
+                .environmentObject(order)
+                .environmentObject(favourites)
         }
     }
 }
